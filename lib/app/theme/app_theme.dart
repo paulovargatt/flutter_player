@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 final ThemeData appThemeData = ThemeData(
-  primaryColor:  Colors.deepPurple,
-  buttonColor:  Colors.black54,
+  primaryColor:  Colors.black,
+  buttonColor:  Colors.black,
   brightness:  Brightness.light,
   accentColor:  Colors.black45,
   appBarTheme: AppBarTheme(

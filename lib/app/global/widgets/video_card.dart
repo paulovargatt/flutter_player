@@ -2,16 +2,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_app_flutter/app/global/widgets/action_sheet.dart';
+import 'package:get_app_flutter/app/player/player_controller.dart';
 
 class VideoCard extends StatelessWidget {
   final video;
 
   VideoCard({Key? key, required this.video}) : super(key: key);
+  final player = Get.find<PlayerController>();
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        player.setVideo(video);
         print(video.title);
       },
       child: Container(

@@ -36,6 +36,8 @@ dependencies:
   flutter_event_bus: ^0.0.2
   carousel_slider: ^3.0.0
   adaptive_action_sheet: ^2.0.0
+  miniplayer: ^1.0.0+2
+  better_player: ^0.0.69
 
 dev_dependencies:
   flutter_test:
