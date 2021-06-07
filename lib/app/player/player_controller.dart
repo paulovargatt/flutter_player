@@ -61,16 +61,20 @@ class PlayerController extends GetxController {
             autoPlay: true,
             aspectRatio: 16 / 9,
             fit: BoxFit.scaleDown,
-            
+            controlsConfiguration: BetterPlayerControlsConfiguration(showControls: false),
+                        
             autoDetectFullscreenDeviceOrientation: true);
     BetterPlayerDataSource dataSource = BetterPlayerDataSource(
         BetterPlayerDataSourceType.network, url,
         videoFormat: BetterPlayerVideoFormat.hls);
     _betterPlayerController = BetterPlayerController(betterPlayerConfiguration);
     _betterPlayerController.setupDataSource(dataSource);
+    
   }
 
   closePlayer() {
+
+    _betterPlayerController.dispose();
     selectedVideo.value = VideoModel();
   }
 }

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ActionSheetVideo extends StatelessWidget {
   final video;
-  const ActionSheetVideo({Key? key, this.video}) : super(key: key);
+  const ActionSheetVideo({Key? key, required this.video}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +15,8 @@ class ActionSheetVideo extends StatelessWidget {
           context: context,
           actions: <BottomSheetAction>[
             BottomSheetAction(
-              title: const Text(
-                'Add',
+              title:  Text(
+                '${video.title}',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w500,

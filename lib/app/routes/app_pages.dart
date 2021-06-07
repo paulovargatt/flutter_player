@@ -3,6 +3,8 @@ import 'package:get_app_flutter/app/modules/initial/initial_binding.dart';
 import 'package:get_app_flutter/app/modules/initial/initial_view.dart';
 import 'package:get_app_flutter/app/modules/login/login_binding.dart';
 import 'package:get_app_flutter/app/modules/login/login_view.dart';
+import 'package:get_app_flutter/app/modules/playlists/initial/playlists_binding.dart';
+import 'package:get_app_flutter/app/modules/playlists/initial/playlists_view.dart';
 import 'package:get_app_flutter/app/modules/signup/signup_binding.dart';
 import 'package:get_app_flutter/app/modules/signup/signup_view.dart';
 import 'package:get_app_flutter/app/modules/tabs/tab_binding.dart';
@@ -39,6 +41,11 @@ class AppPages {
       name: Routes.TAB_HOME,
       page: () => TabPage(),
       binding: TabBinding(),
+    ),
+    GetPage(
+      name: Routes.PLAYLISTS,
+      page: () => PlaylistsPage(),
+      binding: PlaylistsBinding(),
     )
   ];
 }
